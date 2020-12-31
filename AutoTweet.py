@@ -23,7 +23,7 @@ info_dict = {
     'tweetButton' : '//*[@id="react-root"]/div/div/div[2]/main/div/div/div/div[1]/div/div[2]/div/div[2]/div[1]/div/div/div/div[2]/div[4]/div/div/div[2]/div[3]'
 }
 
-driver = webdriver.Edge('/Users/HP/Downloads/msedgedriver')
+driver = webdriver.Edge(name.url_path)
 driver.get(info_dict['url'])
 sleep(3)
 sending(info_dict['email'],info_dict['username'])
